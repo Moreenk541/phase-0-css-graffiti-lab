@@ -1,1 +1,49 @@
 /* write your override styles here */
+/* Reset all elements inside #wall */
+#wall * {
+    all: unset; /* Removes all inherited styles */
+    display: block; /* Ensures elements remain visible */
+}
+
+/* Apply a clean, minimal look */
+#wall {
+    background-color: white; /* Clean wall */
+    padding: 20px;
+    border: 2px solid #ddd;
+}
+
+/* Ensure div elements are visible */
+#wall div {
+    width: 100px;
+    height: 100px;
+    background-color: lightgray; /* Neutral background */
+    border: 1px solid #ccc; /* Subtle border */
+}
+
+/* Target specific tags if they have heavy styling */
+#tag-2, #tag-3, #tag-4, #tag-5, #tag-6, #tag-7 {
+    background: none !important; /* Remove unwanted backgrounds */
+    color: black !important; /* Reset text color */
+    font-family: Arial, sans-serif !important; /* Set a clean font */
+}
+
+/* Remove special classes */
+.slick, .wicked {
+    text-shadow: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    filter: none !important;
+}
+
+/* write your override styles here */
+tag-1 {
+    background: url(../images/tag-1.png) no-repeat;
+    z-index: 7;
+    display: block;
+}
+
+#wall #tag-2 {
+    background: url(../images/tag-2.png) no-repeat;
+    z-index: 6;
+    display: block;
+}
